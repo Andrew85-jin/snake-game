@@ -1,7 +1,10 @@
+import '../styles/GamePage.css';
+import Board from '../components/Board.tsx';
+
 function GamePage() {
   return (
     <>
-      <h1>Game Page</h1>
+      <Board size={400} />
     </>
   );
 }

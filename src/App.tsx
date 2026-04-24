@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import { Routes, Route } from 'react-router-dom';
 import GameHomePage from './pages/GameHomePage.tsx';
 import GamePage from './pages/GamePage.tsx';
@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<GameHomePage />} />
-        <Route path="/game" element={<GamePage />} />
+        <Route path="/" Component={GameHomePage} />
+        <Route path="/game" Component={GamePage} />
       </Routes>
     </div>
   );

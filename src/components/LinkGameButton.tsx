@@ -5,7 +5,7 @@ type GameButtonProps = {
   children: React.ReactNode;
 };
 
-function GameButton({ to, children }: GameButtonProps) {
+function LinkGameButton({ to, children }: GameButtonProps) {
   return (
     <Link to={to} className={'button'}>
       {children}
@@ -13,4 +13,4 @@ function GameButton({ to, children }: GameButtonProps) {
   );
 }
 
-export default GameButton;
+export default LinkGameButton;
